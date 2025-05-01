@@ -1,0 +1,351 @@
+* {
+    padding: 0%;
+    margin: 0;
+}
+
+/* Fuentes */
+
+@font-face {
+            font-family: "FUTRFW.TTF";
+            src: url("./Fuentes/FUTRFW.TTF");
+}
+
+@font-face {
+            font-family: "Publica.otf";
+            src: url("./Fuentes/Publica.otf");
+}
+
+/* Estructurado general */
+
+body {
+        background: linear-gradient(180deg, black, #05703c);
+        background-size: 400% 400%;
+}
+
+header div {
+            text-align: center;
+}
+
+.login {
+        text-align: right;
+}
+
+.home {
+        text-align: right;
+}
+
+/* Navbar Responsive */
+
+.navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+
+@media (max-witdh: 768px) {
+        .navbar {
+                margin: 5px;
+        }
+}
+
+/* Login Responsive */
+
+@media (max-width: 768px) {
+        .login {
+                text-align: center;
+        }
+}
+
+/* acomodado de multimedia */
+
+.imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/* Video Responsive */
+
+.video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 100px;
+}
+
+.video video {
+                max-width: 100%;
+                height: auto;
+}
+
+@media (max-width: 768px) {
+    .video .video {
+                    width: 90%;
+    }
+}
+
+/* formato de títulos */
+
+h1{
+    font-family: "FUTRFW.TTF";
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+/* Títulos en Responsive */
+
+@media (max-width: 768px) {
+        h1 {
+                font-size: 28px;
+                margin: 20px;
+                word-wrap: break-word;
+
+        }
+}
+
+/* Resto del texto */
+
+h2 {
+    font-family: "Publica.otf";
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin: 25px;
+}
+
+h3 {
+    font-family: "FUTRFW.TTF";
+    font-size: 30px;
+    color: white;
+    margin: 50px;
+}
+
+@media (max-width: 768px) {
+        h3 {
+                font-size: 20px;
+                margin: 10px;
+                word-wrap: normal;
+
+        }
+}
+
+span {
+    font-family: "Publica.otf";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    position: static;
+
+}
+
+label { 
+        color: white;
+}
+
+a {
+    color: darkgreen;
+    text-align: center;
+}
+
+p {
+    font-family: "Abel", sans-serif;
+    color: whitesmoke;
+    text-align: justify;
+    margin: 20px;
+}
+
+li {
+    color: white;
+    margin: 15px;
+    font-family: "Publica.otf";
+    text-align: left;
+}
+
+.link {
+        margin: 10px;
+        font-size: larger;
+        font-family: "Publica.otf";
+}
+
+@media (max-width: 768px) {
+        .link {
+                margin: 1px;
+                font-size: 10px;
+                font-family: "Publica.otf";
+                text-align: center;
+        }
+}
+
+.link:hover {
+            color: grey;
+}
+
+/* Sección Contacto */
+
+.numero-telefono {
+                    font-weight: bolder;
+                    margin: 30px;
+                    text-align: center;
+}
+.titulo-whatsapp {
+                    text-align: center;
+}
+.redes-sociales {
+                    text-align: center;
+}
+.redes-container {
+                    display: flex;
+                    justify-content: center; 
+                    gap: 20px; 
+}
+
+@media (max-width: 768px) {
+        .redes-container {
+                gap: 5px
+        }
+}
+
+.instagram {
+            color: magenta;
+}
+.youtube {
+           color: red;
+}
+.facebook {
+            color: blue;
+}
+
+.donaciones {
+            text-align: center;
+}
+.donaciones-container {
+                        display: flex;
+                        justify-content: center;
+                        gap: 15px;
+}
+.donacion {
+            margin: 20px;
+            color: lightgreen;
+}
+
+/* Log In */
+
+.username {
+            text-align: center;
+}
+
+@media (max-width: 768px) {
+        .username {
+                font-size: 30px;
+        }
+}
+
+.boton-enviar {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+}
+
+footer {
+        background-color: #123524;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+}
+
+/*Rediseño de sección "Nuestros Productos" en grid */
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "item1 item1"
+        "item2 item4"
+        "item3 item5"
+        "item6 item6"
+        "item7 item7"
+        "item8 item8";
+    gap: 5px;
+    text-align: center;
+}
+
+.item1 { 
+        grid-area: item1; 
+        text-align: center; 
+}
+.item2 { 
+        grid-area: item2; 
+        text-align: center; 
+}
+.item3 { 
+        grid-area: item3; 
+        text-align: center; 
+}
+.item4 { 
+        grid-area: item4; 
+        text-align: center; 
+}
+.item5 { 
+        grid-area: item5; 
+        text-align: center; 
+}
+.item6 { 
+        grid-area: item6; 
+        text-align: center; 
+}
+.item7 { 
+        grid-area: item7; 
+        text-align: center; 
+}
+.item8 { 
+        grid-area: item8; 
+        text-align: center; 
+        margin-bottom: 100px;
+}
+
+/*Edición del Accordion de Bootstrap */
+
+.accordion-button.collapsed {
+    background-color: #000000; 
+    color: whitesmoke; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #3ea010; 
+}
+
+.accordion-body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.accordion-item {
+    border: 2px solid #169750;
+    border-radius: 7px;
+    border-color: black;
+    border-style: dotted;
+}
+
+.accordion-button:hover {
+    background-color: #123524;
+}
+
+.home {
+        color: darkgreen;
+}
+
+.home:hover {
+            color: grey
+}
+
+.accordion {
+        margin-bottom: 100px;
+}
