@@ -4,26 +4,11 @@
   margin: 0;
 }
 
-/* Fuentes */
-@font-face {
-  font-family: "FUTRFW.TTF";
-  src: url("./Fuentes/FUTRFW.TTF");
-}
-@font-face {
-  font-family: "Publica.otf";
-  src: url("./Fuentes/Publica.otf");
-}
-/*Fondo Import de SASS*/
-header div {
-  text-align: center;
-}
-
-.login {
-  text-align: right;
-}
-
-.home {
-  text-align: right;
+/*Import de SASS*/
+/* Estructurado general con SASS*/
+body {
+  background: linear-gradient(180deg, black, #05703c);
+  background-size: 400% 400%;
 }
 
 /* Navbar Responsive */
@@ -40,6 +25,105 @@ header div {
     margin: 5px;
   }
 }
+/* Sección Contacto */
+.numero-telefono {
+  font-weight: bolder;
+  margin: 30px;
+  text-align: center;
+}
+
+.titulo-whatsapp {
+  text-align: center;
+}
+
+.redes-sociales {
+  text-align: center;
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .redes-container {
+    gap: 5px;
+  }
+}
+.donacion {
+  margin: 20px;
+  color: lightgreen;
+}
+
+.donaciones-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.donaciones {
+  text-align: center;
+}
+
+.instagram {
+  color: #E4405F;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.instagram:hover {
+  color: white;
+}
+
+.youtube {
+  color: #FF0000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.youtube:hover {
+  color: white;
+}
+
+.facebook {
+  color: #1877F2;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.facebook:hover {
+  color: white;
+}
+
+.donacion {
+  text-align: center;
+  color: #FFD700;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.donacion:hover {
+  color: white;
+}
+
+/* Fuentes */
+@font-face {
+  font-family: "FUTRFW.TTF";
+  src: url("./Fuentes/FUTRFW.TTF");
+}
+@font-face {
+  font-family: "Publica.otf";
+  src: url("./Fuentes/Publica.otf");
+}
+header div {
+  text-align: center;
+}
+
+.login {
+  text-align: right;
+}
+
+.home {
+  text-align: right;
+}
+
 /* Login Responsive */
 @media (max-width: 768px) {
   .login {
@@ -161,59 +245,6 @@ li {
   color: grey;
 }
 
-/* Sección Contacto */
-.numero-telefono {
-  font-weight: bolder;
-  margin: 30px;
-  text-align: center;
-}
-
-.titulo-whatsapp {
-  text-align: center;
-}
-
-.redes-sociales {
-  text-align: center;
-}
-
-.redes-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-@media (max-width: 768px) {
-  .redes-container {
-    gap: 5px;
-  }
-}
-.instagram {
-  color: magenta;
-}
-
-.youtube {
-  color: red;
-}
-
-.facebook {
-  color: blue;
-}
-
-.donaciones {
-  text-align: center;
-}
-
-.donaciones-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.donacion {
-  margin: 20px;
-  color: lightgreen;
-}
-
 /* Log In */
 .username {
   text-align: center;
@@ -327,5 +358,7 @@ footer {
 .accordion {
   margin-bottom: 100px;
 }
+
+
 
 /*# sourceMappingURL=style.css.map */

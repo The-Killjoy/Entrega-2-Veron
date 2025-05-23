@@ -1,0 +1,15 @@
+/* Navbar Responsive */
+
+.navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+
+@media (max-witdh: 768px) {
+        .navbar {
+                margin: 5px;
+        }
+}

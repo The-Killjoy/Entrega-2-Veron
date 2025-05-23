@@ -1,0 +1,66 @@
+/* Sección Contacto */
+
+@mixin enlace-estilo($color) {
+    color: $color;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.numero-telefono {
+                    font-weight: bolder;
+                    margin: 30px;
+                    text-align: center;
+}
+.titulo-whatsapp {
+                    text-align: center;
+}
+.redes-sociales {
+                    text-align: center;
+}
+.redes-container {
+                    display: flex;
+                    justify-content: center; 
+                    gap: 20px; 
+}
+
+@media (max-width: 768px) {
+        .redes-container {
+                gap: 5px
+        }
+}
+
+.donacion {
+            margin: 20px;
+            color: lightgreen;
+}
+
+.donaciones-container {
+                        display: flex;
+                        justify-content: center;
+                        gap: 15px;
+}
+
+.donaciones {
+            text-align: center;
+}
+
+.instagram {
+    @include enlace-estilo(#E4405F); 
+}
+
+.youtube {
+    @include enlace-estilo(#FF0000); 
+}
+
+.facebook {
+    @include enlace-estilo(#1877F2); 
+}
+
+.donacion {
+    text-align: center;
+    @include enlace-estilo(#FFD700); 
+}
